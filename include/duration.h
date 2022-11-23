@@ -3,6 +3,7 @@
 #include <stdbool.h>
 
 class Duration {
+    // Private attributes
    private:
     int time;
     int alarm;
@@ -10,6 +11,7 @@ class Duration {
 
     bool checkAndUpdateAlarm();
 
+    // Public attributes
    public:
     Duration();
     Duration(int);
