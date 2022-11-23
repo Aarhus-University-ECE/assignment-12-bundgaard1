@@ -39,7 +39,7 @@ void Duration::setAlarm(int a) {
 }
 
 bool Duration::checkAndUpdateAlarm() {
-    if (alarmHasBeenSet && time >= alarm) {
+    if (alarmHasBeenSet && time > alarm) {
         alarm = -1;
         alarmHasBeenSet = false;
         return true;
